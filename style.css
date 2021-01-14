@@ -1,15 +1,70 @@
+*, body {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 .swiper-container {
-    width: 100%;
-    height: 100%;
+	width: 100vw;
+	max-width: 1920px;
+	height: 100vh;
+	max-height: 1080px;
 }
 
 .swiper-slide {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
+/* 	width: 100%;
+	height: 100%; */
+	overflow: hidden; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
 
 .swiper-slide img {
-	width: 100%; 
-	/* height: 100%; */
+	/* width: 100% */    
+	/* text-align: center; */
+	/* height: 100%;  */
+	object-fit: contain;
+	object-position: -300px -200px;
+	
 }
+
+#first {
+	background-image: url("http://wallpoper.com/images/00/41/72/12/digital-art_00417212.jpg");
+
+}
+
+#third {
+	background-image: url("https://cdn.wallpapersafari.com/63/14/mp3uTy.jpg");
+}
+
+#second {
+	background-image: url("https://webtoolfeed.files.wordpress.com/2012/06/7127569153_8bde2592ea_o.jpg");
+}
+
+#fourth {
+	background-image: url("http://www.zingerbugimages.com/backgrounds/mount_hood_oregon_background_1800x1600.jpg");
+}
+
+#fifth {
+	background-image: url("http://www.zingerbugimages.com/backgrounds/mountain_lake_background_1800x1600.jpg");
+}
+
+.swiper-pagination-bullet {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	color: #000;
+	opacity: 1;
+	background: rgba(26, 60, 212, 0.7);
+	font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .swiper-pagination-bullet-active {
+	color: #fff;
+	background: #007aff;
+  }
